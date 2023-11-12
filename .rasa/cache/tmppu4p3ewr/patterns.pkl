@@ -1,0 +1,10 @@
+[
+  {
+    "name": "verb",
+    "pattern": "(\\bparler\\b|\\bfinir\\b|\\bapprendre\\b|\\betre\\b)"
+  },
+  {
+    "name": "ex_level",
+    "pattern": "(\\bA2\\b|\\bB2\\b|\\ba2\\b|\\bb2\\b)"
+  }
+]

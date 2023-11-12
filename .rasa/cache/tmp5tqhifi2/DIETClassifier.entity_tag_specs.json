@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-ex_level",
+      "2": "I-ex_level",
+      "3": "L-ex_level",
+      "4": "U-ex_level",
+      "5": "B-verb",
+      "6": "I-verb",
+      "7": "L-verb",
+      "8": "U-verb",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-ex_level": 1,
+      "I-ex_level": 2,
+      "L-ex_level": 3,
+      "U-ex_level": 4,
+      "B-verb": 5,
+      "I-verb": 6,
+      "L-verb": 7,
+      "U-verb": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

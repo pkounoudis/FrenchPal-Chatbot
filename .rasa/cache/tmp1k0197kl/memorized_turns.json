@@ -1,0 +1,22 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVJUWJecU5iSWptbWxAOyzUCI=": "utter_translate",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVJUWJecU5iSWpxLkEoRyfSbEANppsog==": "action_listen",
+    "eJydjlEKgCAQBa+yB+gEXiVCJB4h2Bbr2o949wSDPhX/3oNhmDWXhfIteKzb1V9sKLdh2Z0w9J3go4IrmyKkMp7rVUOHAFo6jqQKsQ2dM3QqVBzH4BRjJT8+bxov2l6kXogt": "action_show_translation",
+    "eJytjlEKgCAQBa/iATqBV4kQiaUEW2Nd60O8e4JSfxnS375lGGaMaRBxJziUntk4lCKWQ6HeQIo6rPEMmNnggTJjME+WYiEATg1HYAZSBe0zNCqYNHqrGb6VPHi/6a+iOvzqzrsrP16N0wVb/6f4": "action_listen",
+    "eJy1jtEJgDAMBVfpAE7QVURKkGCLGiVJ9aN0dwuKfiqif7lwPK5OuTJpZlwctBomsibthyMY0ZoDhiCKVNwoyMUJVFCt6RhR881GVEV2u/pu4aZCGUgGUHxWcunvl74qOkD8tJ5d5fFjmQfqJedmAzGEwj4=": "utter_goodbye",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVJUWJecU5iSWpxLkEoZx8k6jlIiinOCO/HO4uoAANXZaRmJddTGSU5eenJFViCyaoIbEAH2DclA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQNAVibm5iUW1tbEATFdPOw==": "utter_help_theory_grammar",
+    "eJydjlEKgCAQRK/iATqBV4lYlhhSSIt1DUK6e0L1GUZ/M/DmMX05OlNWwUY8ql+iNeUKFDnAmrvMPiliZXOCVMbHWtWaSQA9Go6sCqEL/WdovuAQWL79cJhXUodFdnqG78bhBMeibu8=": "action_conjugate_verbs",
+    "eJydjlEKhDAMBa/SA3iCXmVZQlYeWrGppKkgxbtb0P1dF/8yMBneq+6dq4tiJe4tJPGungcJR3h3wRyyQZpbMrQ5QRqad4MCtt80ihmUTvVZ4XYFx8j6344R80I2IulG38enxQv6JFMZ2EAr9JN/5N4HtySNRQ==": "utter_help_again_grammar",
+    "eJytjtEJwzAMBVfxAJ3Aq5Qi1PBwXGI5yHKgmOxeQ5LvhNA/HTwd92zrw7VZsRAPFrN417aDhBO822GKxSB9Wwu0b6J0NO+CAraeOKoZlLbpPcNpBafEeq1jxDSTjcj6pePxrnGHIcunBjbQAn2XfwRy4CgX+l4/XVisXg==": "action_listen",
+    "eJytkNEJwzAMRFfxAJ3Aq5Qi1KA4KrEcZDlQjHevIelnSQn504O746F7bTdXF6UVcDBO4l3dDhCM5N0OM2cj6dmSSXuGpaN5F5TI2sFGMSOFLXpu4dACY0T9z2OieQGbKOkbvsWzizsMSV4loBGspM98hSAGZLnK79ffcBxZY2uPD2G/xpA=": "action_conjugate_verbs",
+    "eJytkEEKhDAMRa/SA8wJehWRkJFYO9hU0lQYinefgroUB+kuH34eL+nK9jJlEVoBB/WRrSn7AIyBrDnC7JMS125OJLXjuUa1xgmRbjeMrEoCe/UZ4dYCQ0D5z2OieQGdKMoXzsWnxCMMkT/ZoRKsJO/UQhAdem7ld/U3HEcvodWRJ63/AXhP5HQ=": "utter_help_theory_grammar",
+    "eJytkVEKgzAMhq/SA+wEvcoYIZNYO2wqaSqM4t1XUB9FJ33LD38/vqTPsjxMmYRmwE59ZGvKOgBjIGu2MPqkxLWbE0nteK5RrXFCpMsJI6uSwFq9Rzi1wBBQrnkMNE6gA0X5wv7wLnELXeRPdqgEM8k7tRBEh55b+R3dDfveS2i15DXaH5+wA18/vjQDxQ==": "action_listen",
+    "eJytkd0JwzAMhFfxAJ3Aq5Ri1FRxXGI5yHIgGO9eQ9LHkB/8poPT8Z30zOWh8sQ4G+jEBdIqr4Mh8KjVJkYXBal6U0SuHkdVilaWEaUcZCQRZLNa7yUcUoD3wOc4BhwnIwMGXsx/8W7iJrpA32RB0MzI79gCECw4asW3dzfoe8e+VclzaReecAlvr+MHaSnl9QMTwh0y": "utter_goodbye",
+    "eJytklsKhDAMRbfSBcwK3MowlKhX7WBTSaMg4t5H0PksPuhfL9weTtK+l/VllkEwWarUBS7Msh8sk0dhjtC7qOCtO0bI1nG8RS1MK4CuJ4xRFWL36jPCqQV5T3LNo0M/WO0QZLb/i0+JR6gCf8eWFHaClDGHILXkOJdfam/UNE58riGv0W48wi291Iw1eL74QUOoyxkpxOcHFCE2rw==": "action_listen"
+  }
+}

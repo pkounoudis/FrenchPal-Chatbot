@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-verb",
+      "2": "I-verb",
+      "3": "L-verb",
+      "4": "U-verb",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-verb": 1,
+      "I-verb": 2,
+      "L-verb": 3,
+      "U-verb": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

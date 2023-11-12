@@ -1,0 +1,6 @@
+[
+  {
+    "name": "verb",
+    "pattern": "(\\bparler\\b|\\bfinir\\b|\\bapprendre\\b|\\betre\\b)"
+  }
+]

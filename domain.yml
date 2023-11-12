@@ -1,0 +1,58 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - translate
+  - grammar
+  - lang_exercises
+  - thanks
+  - give_text
+  - verbs
+  - inquire_verb
+  - exercises_level
+
+actions:
+- action_show_translation
+- action_conjugate_verbs
+- action_show_exercises
+
+entities:
+- ex_level
+- verb
+
+slots:
+  ex_level: 
+    type: text
+    influence_conversation: True
+    mappings: 
+      - type: from_entity
+        entity: ex_level
+
+responses:
+  utter_greet:
+  - text: "Hey! I am a french tutor! Do you need help with grammar, do you want me to translate something for you or would you like some exercises?!"
+
+  utter_help_theory_grammar:
+  - text: "Pas de problème! Let's practice. Choose a verb from the list, and I'll help you conjugate it! (parler, finir, apprendre, etre)"
+
+  utter_help_again_grammar:
+  - text: "Would you like me to conjugate another verb?!"
+
+  utter_translate:
+  - text: "Of course! Type in the phrase /'My text: /' and then the text you want to translate (up to 50 words)"
+
+  utter_lang_exercises:
+  - text: "Bien sure! Please choose the level of difficulty (A2 or B2)!"
+
+  utter_goodbye:
+  - text: "Au revoir! (Bye!)"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

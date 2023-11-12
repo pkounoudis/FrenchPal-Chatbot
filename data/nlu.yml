@@ -1,0 +1,184 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: thanks
+  examples: | 
+    - thanks!
+    - thank you!
+    - ty
+    - thnx!
+
+- intent: inquire_verb
+  examples: | 
+    - Please [parler](verb)
+    - Please [finir](verb)
+    - Can you conjugate [apprendre](verb)
+    - Conjugate [etre](verb)
+    - Could you please conjugate[parler](verb)
+    - Please conjugate [finir](verb)
+
+- lookup: verb
+  examples: | 
+    -parler
+    -finir
+    -apprendre
+    -etre
+
+- lookup: ex_level
+  examples: | 
+    -A2
+    -B2
+    -a2
+    -b2
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: give_text
+  examples: | 
+    - My text: Bien que consultée et rédigée en grande partie par des contributeurs français
+    - My text: dominante géographique située dans les zones francophones" 
+    - My text: que l'ensemble des versions de Wikipédia et n'est pas uniquement rattachée à la France.
+    - Pour ce qui est du contenu géolocalisé, on constate une forte
+    - Wikipédia en français est aussi internationale 
+    - My text: dans la quasi-totalité des pays francophones, l'édition française est celle ayant 
+    - le plus de pages géolocalisées après l'édition anglaise
+    - le
+    - la
+    - les
+
+- intent: grammar
+  examples: |
+    - grammar
+    - grammar please
+    - with grammar please
+    - with grammar
+    - I would like help with grammar!
+    - I need help with grammar!
+    - Grammar
+    - Grammar would be nice
+    - help me with grammar please
+    - help me with grammar
+    - help grammar
+
+- intent: translate
+  examples: | 
+    - translation 
+    - translation please
+    - I would like to translate something!
+    - I would like to translate a text!
+    - I 'd like to translate something
+    - translate
+    - translate please
+    - Please translate
+
+- intent: lang_exercises
+  examples: | 
+    - exercises
+    - french exercises please
+    - I would like some exercises
+    - I want to solve some exercises please!
+    - please exercises!
+    - language exercises
+    - I would like to solve an exercise!
+
+- intent: exercises_level
+  examples: | 
+    - [A2](ex_level)
+    - [B2](ex_level)
+    - [a2](ex_level)
+    - [b2](ex_level)
+    - Please [b2](ex_level)
+    - Please [a2](ex_level)
+    - I would like some [A2](ex_level) exercises please!
+    - I think [A2][ex_level] 
+    - I would like some [B2](ex_level) exercises please!
+    - Please [b2](ex_level) exercises!
+    - I want [B2](ex_level) exercises
+    - I wanna [A2](ex_level) exercises
+
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

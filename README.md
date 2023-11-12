@@ -1,7 +1,7 @@
 # My-chatBot
 Rasa project for Master's Course 
 
-a. An experimental chatbot for educational purposes, and more specifically for language learning. I wanted to implement a "language helper" for people who are learning a new language, and provide
+a. An experimental chatbot for educational purposes, and more specifically for language learning. I wanted to implement a "language helper" for people who are learning french, and provide
 them with 3 tools. A grammar helper, a translator and an exercises' generator. The three main scenarios are described velow.
 
 b. First Tool, Grammar Helper. It is implemented with a json database with 4 options. The verbs etre, parler, apprendre and finir (one for each conjugation category). The user chooses a verb

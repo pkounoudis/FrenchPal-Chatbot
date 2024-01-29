@@ -80,7 +80,7 @@ Answers:
 
 b. Policies
 
-Three Policy combinations were used. RulePolicy must always be used, because we use forms.
+Three Policy combinations were used. RulePolicy must always be used with Forms.
 
 1) RulePolicy alone
    

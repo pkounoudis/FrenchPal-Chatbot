@@ -12,17 +12,76 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- rule: Always Greet!
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Exercises Please!
+  steps:
+  - intent: lang_exercises
+  - action: utter_lang_exercises
+
+- rule: Wrong Exercises Please!
+  steps:
+  - intent: wrong_exercises_level
+  - action: utter_wrong_exercises_level
+
 - rule: Conjugate verb
   steps:
   - intent: inquire_verb
   - action: action_conjugate_verbs
+
+- rule: Grammar Please!
+  steps:
+  - intent: grammar
+  - action: utter_help_theory_grammar
 
 - rule: Translate 
   steps:
   - intent: give_text
   - action: action_show_translation
 
-- rule: Exercises 
+- rule: Translate please! 
+  steps:
+  - intent: translate
+  - action: utter_translate
+
+- rule: Activate form 
   steps:
   - intent: exercises_level
+  - action: ex_level_form
+  - active_loop: ex_level_form
+
+- rule: Example of an unhappy path
+  condition:
+  # Condition that form is active.
+  - active_loop: ex_level_form
+  steps:
+  # This unhappy path handles the case of an intent `chitchat`.
+  - intent: ask_weather_chit
+  - action: utter_weather
+  # Return to form after handling the `chitchat` intent
+  - action: utter_lang_exercises
+  - action: ex_level_form
+  - active_loop: ex_level_form
+
+- rule: Submit form
+  condition:
+  - active_loop: ex_level_form
+  steps:
+  - action: ex_level_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
   - action: action_show_exercises
+
+- rule: respond to chitchat1
+  steps:
+  - intent: ask_name_chat
+  - action: utter_iamabot
+
+- rule: respond to chitchat2
+  steps:
+  - intent: ask_weather_chit
+  - action: utter_weather

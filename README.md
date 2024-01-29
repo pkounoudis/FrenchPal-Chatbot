@@ -85,18 +85,17 @@ b. Policies
 Three Policy combinations were used. RulePolicy must always be used with Forms.
 
 1) RulePolicy alone
+
+   --> Always works with the correct rules
+   --> If a rule is not set, a story does not playout if another story has already been played.
    
-  --> Always works with the correct rules
-  
-  --> If a rule is not set, a story does not playout if another story has already been played.
-   
-2) RulePolicy with TEDPolicy
+3) RulePolicy with TEDPolicy
    
    --> The "explain" intent is not recognized
    
    --> The "explain" intent is recognised if max history is set to 10
 
-3) RulePolicy with MemoizationPolicy
+4) RulePolicy with MemoizationPolicy
    
    --> The "explain" intent is well recognized
    

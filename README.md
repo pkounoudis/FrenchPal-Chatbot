@@ -87,6 +87,7 @@ Three Policy combinations were used. RulePolicy must always be used with Forms.
 1) RulePolicy alone
 
    --> Always works with the correct rules
+   
    --> If a rule is not set, a story does not playout if another story has already been played.
    
 3) RulePolicy with TEDPolicy

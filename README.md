@@ -88,13 +88,13 @@ Three Policy combinations were used. RulePolicy must always be used, because we 
   
   --> If a rule is not set, a story does not playout if another story has already been played.
    
-3) RulePolicy with TEDPolicy
+2) RulePolicy with TEDPolicy
    
    --> The "explain" intent is not recognized
    
    --> The "explain" intent is recognised if max history is set to 10
 
-5) RulePolicy with MemoizationPolicy
+3) RulePolicy with MemoizationPolicy
    
    --> The "explain" intent is well recognized
    

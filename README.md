@@ -39,7 +39,7 @@ In the following example from Rasa interactive, I ask the bot to help me with gr
 Current slots: 
         ex_level: None, requested_slot: None, session_started_metadata: None
 
-I also added a story "unhappy language exercises A2/B2" to handle cases where the user chooses the wrong exercises level (wrong input) i.e. C2 level exercises instead of A2 or B2. To that end, a new intend "wrong_exercises_level" was added. For example:
+I also added a story "unhappy language exercises A2/B2" to handle cases where the user chooses the wrong exercises' level (wrong input) i.e. C2 level exercises instead of A2 or B2. To that end, a new intend "wrong_exercises_level" was added. For example:
 
 Your input ->  hi!                                                                     
 Hey! I am a french tutor! Do you need help with grammar, do you want me to translate something for you or would you like some exercises?!
@@ -79,3 +79,22 @@ Answers:
 5. jouent
 
 b. Policies
+
+Three Policy combinations were used. RulePolicy must always be used, because we use forms.
+
+1) RulePolicy alone
+  --> Always works with the correct rules
+  --> If a rule is not set, a story does not playout if another story has already been played.
+   
+3) RulePolicy with TEDPolicy
+   --> The "explain" intent is not recognized
+   --> The "explain" intent is recognised if max history is set to 10
+
+5) RulePolicy with MemoizationPolicy
+   --> The "explain" intent is well recognized
+   --> After some turns, again, the "explain" intent is not recognized
+
+After some experimentation, it was evident that the RulePolicy always works good if the rules have been set correctly, at least for low-turn scenarios, such as those used in my chatBot. TEDPolicy and Memoization had some minor issues, and maybe they work better in more complex scenarios and dialogues, with much more turns.
+
+In this last version, the RulePolicy-MemoizationPolicy combination was used, with well defined rules that help the chatBot answer coherently, most of the times.
+

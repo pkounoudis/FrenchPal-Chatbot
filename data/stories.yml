@@ -17,27 +17,99 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: translate
+  - intent: explain
+  - action: utter_help_with_translation
+  - intent: affirm
   - action: utter_translate
   - intent: give_text
   - action: action_show_translation
   - intent: thanks
   - action: utter_goodbye
 
-- story: language exercises A2
+- story: language exercises A2/B2
   steps:
   - intent: greet
   - action: utter_greet
   - intent: lang_exercises
   - action: utter_lang_exercises
   - intent: exercises_level
-    entities: 
-    - ex_level: A2
-    - ex_level: B2
+  - action: ex_level_form
+  - active_loop: ex_level_form
   - slot_was_set:
     - ex_level: A2
   - slot_was_set:
-    - ex_level: B2      
+    - ex_level: B2   
+  - slot_was_set: 
+    - requested_slot: null
+  - active_loop: null
   - action: action_show_exercises
   - intent: thanks
   - action: utter_goodbye
+
+- story: unhappy language exercises A2/B2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: lang_exercises
+  - action: utter_lang_exercises
+  - intent: wrong_exercises_level
+  - action: utter_wrong_exercises_level
+  - intent: exercises_level
+  - action: ex_level_form
+  - active_loop: ex_level_form
+  - slot_was_set:
+    - ex_level: A2
+  - slot_was_set:
+    - ex_level: B2   
+  - slot_was_set: 
+    - requested_slot: null
+  - active_loop: null
+  - action: action_show_exercises
+  - intent: thanks
+  - action: utter_goodbye
+
+# - story: User interrupts the form and chitchats
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: lang_exercises
+#   - action: utter_lang_exercises
+#   - intent: exercises_level
+#   - action: ex_level_form
+#   - active_loop: ex_level_form
+#   - intent: ask_weather_chit
+#   - action: utter_weather
+#   - intent: thanks
+#   - slot_was_set:
+#     - ex_level: A2
+#   - slot_was_set:
+#     - ex_level: B2   
+#   - slot_was_set: 
+#     - requested_slot: null
+#   - active_loop: null
+#   - action: action_show_exercises
+#   - intent: thanks
+#   - action: utter_goodbye
+
+# - story: language exercises A2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: lang_exercises
+#   - action: utter_lang_exercises
+#   - intent: exercises_level
+#     entities: 
+#     - ex_level: A2
+#     - ex_level: B2
+#   - slot_was_set:
+#     - ex_level: A2
+#   - slot_was_set:
+#     - ex_level: B2      
+#   - action: action_show_exercises
+#   - intent: thanks
+#   - action: utter_goodbye
+
+
+
+
+

@@ -14,3 +14,27 @@ exercise.
 c. More options regarding the exercises' dificulty level, their genre (either vocabulary or grammar), more verbs in various tenses, help with more grammar phenomena (plural, subjonctif etc) and maybe explore 
 some more functionalities. For example, a chatbot could be made that generates history quizzez, answers math questions or even helps with university administration tasks (i.e. paying of tuition fees) and 
 has answers for almost all course-related information, including fees, curriculum covered, completion date, etc. 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Chatbot-Extended Version Assignment 3
+
+a. Forms
+I used Rasa Forms to properly change scenario 3, Exercises Generator. The form that was implemented ensures that entities A2 or B2 fill the required slot only when the relevant intent is formed, and not otherwise.
+In the following example from Rasa interactive, I ask the bot to help me with grammar but I intentionally mention the A2 entity with the "Some grammar A2" string. The slot is not filled (None), even though the entity was recognized.
+
+ 3    utter_greet 1.00                                                             
+      Hey! I am a french tutor! Do you need help with                              
+      grammar, do you want me to translate something for                           
+      you or would you like some exercises?!                                       
+      action_listen 1.00                                                           
+───────────────────────────────────────────────────────────────────────────────────
+ 4                                                                    Some grammar 
+                                                                   [A2][{"entity": 
+                                                                      "ex_level"}, 
+                                                                        {"entity": 
+                                                                      "ex_level"}] 
+                                                              intent: grammar 0.99 
+Current slots: 
+        ex_level: None, requested_slot: None, session_started_metadata: None
+

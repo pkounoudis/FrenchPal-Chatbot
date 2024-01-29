@@ -78,6 +78,8 @@ Answers:
 4. parlons
 5. jouent
 
+An extra feature was implemented, in scenario 2, Translator. The relevant story was changed and the bot now can also handle an "explain" intent, where the user says that they cannot understand and they want an example. The bot takes the initiative and explains to the user how the Translation feature works.
+
 b. Policies
 
 Three Policy combinations were used. RulePolicy must always be used with Forms.

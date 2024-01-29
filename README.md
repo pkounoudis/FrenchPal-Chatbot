@@ -43,8 +43,10 @@ I also added a story "unhappy language exercises A2/B2" to handle cases where th
 
 Your input ->  hi!                                                                     
 Hey! I am a french tutor! Do you need help with grammar, do you want me to translate something for you or would you like some exercises?!
+
 Your input ->  exercises                                                               
 Bien sure! Please choose the level of difficulty (A2 or B2)!
+
 Your input ->  C2                                                                      
 Please, enter again a valid exercises level (A2 or B2)
 
@@ -52,12 +54,16 @@ Finally, when the user engages in irrelevant conversation (chitchat) i.e. asks f
 
 Your input ->  hi                                                                      
 Hey! I am a french tutor! Do you need help with grammar, do you want me to translate something for you or would you like some exercises?!
+
 Your input ->  exercises please                                                        
 Bien sure! Please choose the level of difficulty (A2 or B2)!
+
 Your input ->  What is the weather though?                                             
 It's always sunny in Greece! Now, please choose the level of difficulty (A2 or B2)!
+
 Your input ->  c2                                                                      
 Please, enter again a valid exercises level (A2 or B2)
+
 Your input ->  a2                                                                      
 Here is some a2 exercises! Fill in the blanks with the appropriate form of the verb in parentheses.
 1. Je (manger) du pain.

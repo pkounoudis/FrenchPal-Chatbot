@@ -142,6 +142,31 @@ nlu:
     - I want [B2](ex_level) exercises
     - I wanna [A2](ex_level) exercises
 
+- intent: wrong_exercises_level
+  examples: | 
+    - B1
+    - C2
+    - C1
+    - A1
+    - b1
+    - c2
+    - I would like some C2 exercises please!
+    - I think b1 
+    - I would like some c1 exercises please!
+    - Please c2 exercises!
+    - I want B1 exercises
+    - I wanna a1 exercises
+
+- intent: explain
+  examples: | 
+    - I do not understand
+    - Please help me
+    - help
+    - I want help
+    - Give me an example
+    - example please
+    - example
+
 # - intent: mood_great
 #   examples: |
 #     - perfect
@@ -182,3 +207,19 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: ask_name_chat
+  examples: |
+    - What is your name?
+    - May I know your name?
+    - What do people call you?
+    - Do you have a name for yourself?
+    - Who are you?
+
+- intent: ask_weather_chit
+  examples: |
+    - What's the weather like today?
+    - Does it look sunny outside today?
+    - Oh, do you mind checking the weather for me please?
+    - I like sunny days in Berlin.
+    - The weather, please

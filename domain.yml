@@ -13,6 +13,10 @@ intents:
   - verbs
   - inquire_verb
   - exercises_level
+  - ask_weather_chit
+  - ask_name_chat
+  - explain
+  - wrong_exercises_level
 
 actions:
 - action_show_translation
@@ -30,6 +34,16 @@ slots:
     mappings: 
       - type: from_entity
         entity: ex_level
+        conditions:
+        - active_loop: ex_level_form
+
+forms:
+  ex_level_form:
+    ignored_intents: 
+    - ask_weather_chit
+    - ask_name_chat
+    required_slots:
+        - ex_level
 
 responses:
   utter_greet:
@@ -51,7 +65,16 @@ responses:
   - text: "Au revoir! (Bye!)"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa!"
+  - text: "I am a bot, powered by Rasa."
+
+  utter_weather:
+  - text: "It's always sunny in Greece! Now, please choose the level of difficulty (A2 or B2)!"
+
+  utter_help_with_translation:
+  - text: "Let me help you! You can give me a text and I can translate it! Would you like that!?"
+
+  utter_wrong_exercises_level:
+  - text: "Please, enter again a valid exercises level (A2 or B2)"
 
 session_config:
   session_expiration_time: 60

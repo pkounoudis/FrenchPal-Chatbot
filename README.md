@@ -83,15 +83,21 @@ b. Policies
 Three Policy combinations were used. RulePolicy must always be used, because we use forms.
 
 1) RulePolicy alone
+   
   --> Always works with the correct rules
+  
   --> If a rule is not set, a story does not playout if another story has already been played.
    
 3) RulePolicy with TEDPolicy
+   
    --> The "explain" intent is not recognized
+   
    --> The "explain" intent is recognised if max history is set to 10
 
 5) RulePolicy with MemoizationPolicy
+   
    --> The "explain" intent is well recognized
+   
    --> After some turns, again, the "explain" intent is not recognized
 
 After some experimentation, it was evident that the RulePolicy always works good if the rules have been set correctly, at least for low-turn scenarios, such as those used in my chatBot. TEDPolicy and Memoization had some minor issues, and maybe they work better in more complex scenarios and dialogues, with much more turns.

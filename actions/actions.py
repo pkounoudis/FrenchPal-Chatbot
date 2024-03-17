@@ -30,7 +30,7 @@ import openai
 def get_answers_from_chatgpt(user_text):
 
     # OpenAI API Key
-    openai.api_key = 
+    openai.api_key = "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"
 
     # Use OpenAI API to get the response for the given user text and intent
     output = openai.ChatCompletion.create(
@@ -49,7 +49,7 @@ def get_answers_from_chatgpt(user_text):
 def get_exercises_from_chatgpt(user_text):
 
     # OpenAI API Key
-    openai.api_key = 
+    openai.api_key = "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"
 
     # Use OpenAI API to get the response for the given user text and intent
     output = openai.ChatCompletion.create(
@@ -108,7 +108,7 @@ class French_Exercises(Action):
         exercise_level = tracker.get_slot("ex_level")
 
             # OpenAI API Key
-        openai.api_key = 
+        openai.api_key = "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"
 
         # Use OpenAI API to get the response for the given user text and intent
         output = openai.ChatCompletion.create(

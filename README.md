@@ -11,8 +11,6 @@ and the bot gives the english translation.
   Third tool, Exercises Generator. Again, this tools is implemented with the help of the ChatGPT 3.5 api. The user chooses the level of difficulty (A2 or B2) and the bot generates a small grammar
 exercise. 
 
-*The API was removed, due to safety reasons.
-
 c. More options regarding the exercises' dificulty level, their genre (either vocabulary or grammar), more verbs in various tenses, help with more grammar phenomena (plural, subjonctif etc) and maybe explore 
 some more functionalities. For example, a chatbot could be made that generates history quizzez, answers math questions or even helps with university administration tasks (i.e. paying of tuition fees) and 
 has answers for almost all course-related information, including fees, curriculum covered, completion date, etc. 

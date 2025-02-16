@@ -48,7 +48,6 @@ def get_answers_from_chatgpt(user_text):
 
 def get_exercises_from_chatgpt(user_text):
 
-    # OpenAI API Key
     openai.api_key = ""
 
     # Use OpenAI API to get the response for the given user text and intent

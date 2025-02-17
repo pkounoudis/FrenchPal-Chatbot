@@ -50,7 +50,7 @@ def get_exercises_from_chatgpt(user_text):
 
     openai.api_key = ""
 
-    # Use OpenAI API to get the response for the given user text and intent
+    # Use OpenAI API to get the response for the given user text
     output = openai.ChatCompletion.create(
         model = "gpt-3.5-turbo-1106",
         messages = [{"role": "user",

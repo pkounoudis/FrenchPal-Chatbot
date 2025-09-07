@@ -62,7 +62,7 @@ responses:
   - text: "Bien sure! Please choose the level of difficulty (A2 or B2)!"
 
   utter_goodbye:
-  - text: "Au revoir! (Bye!)"
+  - text: "Au revoir! (That means Bye!)"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."

@@ -1,5 +1,5 @@
 # My-chatBot
-Rasa project for Master's Course 
+Rasa project for Master's Course "Language Technology"
 
 a. An experimental chatbot for educational purposes, and more specifically for language learning. I wanted to implement a "language helper" for people who are learning french, and provide
 them with 3 tools. A grammar helper, a translator and an exercises' generator. The three main scenarios are described below.

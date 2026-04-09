@@ -48,7 +48,7 @@ def get_answers_from_chatgpt(user_text):
 
 def get_exercises_from_chatgpt(user_text):
 
-    openai.api_key = ""
+    openai.api_key = "your api-key here"
 
     # Use OpenAI API to get the response for the given user text
     output = openai.ChatCompletion.create(

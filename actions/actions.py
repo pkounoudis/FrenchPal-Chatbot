@@ -143,7 +143,7 @@ class Verb_Conjugator(Action):
         current_verb = tracker.latest_message.get("text")
 
         if str(current_verb) not in list(verbs_db.keys()):
-            msg = f"{current_verb}, is either not in the list or you mispelled it!"
+            msg = f"{current_verb}, is either not in the list or you mispelled it! Carefull!"
             dispatcher.utter_message(text=msg)
             return []
             
